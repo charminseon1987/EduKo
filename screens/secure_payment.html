@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html class="" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EduKo Secure Payment</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {primary: "#265080", "background-light": "#f6f7f8", "background-dark": "#13191f"}, fontFamily: {display: "Inter"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}}}};</script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex h-screen w-full flex-col overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 border-b border-slate-200 dark:border-slate-800">
+<div class="text-primary flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-primary/10 transition-colors cursor-pointer">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight flex-1 text-center pr-10">Secure Payment</h2>
+</div>
+<!-- Main Content Area -->
+<div class="flex-1 overflow-y-auto pb-32">
+<!-- Plan Summary Section -->
+<div class="px-4 pt-6">
+<h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight mb-4">Plan Summary</h3>
+<div class="flex items-stretch justify-between gap-4 rounded-xl bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 p-4 shadow-sm">
+<div class="flex flex-col justify-center gap-1 flex-[2_2_0px]">
+<p class="text-primary text-xs font-bold uppercase tracking-wider">Advanced Course</p>
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight">AI Professional Certification</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">12 Months Premium Access</p>
+<p class="text-primary text-lg font-bold mt-1">$199.00</p>
+</div>
+<div class="w-32 h-24 bg-center bg-no-repeat bg-cover rounded-lg flex-none" data-alt="Digital representation of artificial intelligence neural networks" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCgo8AK38-u_ZD_e6SjGM1_HYZVd9ZcM1chMO7RYpHMRA-XATJW3FD6aYS51Pkkxv66dLCtNMuWQAo8uLIgBNwpCT--xDOp8LzlwH6ZSuoz90eEOo_iw9PAfdMlPMzCwKR7ACg0kczl7vD9uZFieqViyz6PXR1_D53NGeUhCrOUT3HUHquV2bnfIKC2CZ7FfmeeLi8aRqNHhlpamyFU5WIKMcMv8MMFmOWTz0kvSt9BcXLnjuwaX4X4iLvH3zf8IUA6_95spbyDT1A");'>
+</div>
+</div>
+</div>
+<!-- Payment Methods Tabs -->
+<div class="px-4 pt-8">
+<h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight mb-4">Payment Method</h3>
+<div class="flex border-b border-slate-200 dark:border-slate-800 overflow-x-auto no-scrollbar">
+<a class="flex flex-col items-center justify-center border-b-2 border-primary text-primary gap-1 pb-3 px-4 min-w-[80px]" href="#">
+<span class="material-symbols-outlined">credit_card</span>
+<p class="text-xs font-bold uppercase">Card</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-slate-500 dark:text-slate-400 gap-1 pb-3 px-4 min-w-[80px]" href="#">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<p class="text-xs font-bold uppercase">PayPal</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-slate-500 dark:text-slate-400 gap-1 pb-3 px-4 min-w-[80px]" href="#">
+<span class="material-symbols-outlined">ios</span>
+<p class="text-xs font-bold uppercase">Apple</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-slate-500 dark:text-slate-400 gap-1 pb-3 px-4 min-w-[80px]" href="#">
+<span class="material-symbols-outlined">google</span>
+<p class="text-xs font-bold uppercase">Google</p>
+</a>
+</div>
+</div>
+<!-- Card Details Form -->
+<div class="px-4 py-6 space-y-4">
+<div class="space-y-1.5">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1">Cardholder Name</label>
+<input class="w-full h-12 bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-lg px-4 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-1.5">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1">Card Number</label>
+<div class="relative">
+<input class="w-full h-12 bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-lg px-4 pr-12 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-all" placeholder="0000 0000 0000 0000" type="text"/>
+<div class="absolute right-4 top-1/2 -translate-y-1/2">
+<span class="material-symbols-outlined text-slate-400">credit_card</span>
+</div>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-1 space-y-1.5">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1">Expiry Date</label>
+<input class="w-full h-12 bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-lg px-4 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-all" placeholder="MM/YY" type="text"/>
+</div>
+<div class="flex-1 space-y-1.5">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1">CVV</label>
+<input class="w-full h-12 bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-lg px-4 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-all" placeholder="***" type="password"/>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<input class="rounded border-slate-300 dark:border-slate-700 text-primary focus:ring-primary bg-transparent" id="save-card" type="checkbox"/>
+<label class="text-sm text-slate-600 dark:text-slate-400" for="save-card">Save card for future purchases</label>
+</div>
+</div>
+<!-- Security Trust Badges -->
+<div class="px-4 py-4 flex items-center justify-center gap-6">
+<div class="flex items-center gap-1.5 opacity-60">
+<span class="material-symbols-outlined text-sm text-green-500">verified_user</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">SSL Secure</span>
+</div>
+<div class="flex items-center gap-1.5 opacity-60">
+<span class="material-symbols-outlined text-sm text-primary">security</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">PCI Compliant</span>
+</div>
+<div class="flex items-center gap-1.5 opacity-60">
+<span class="material-symbols-outlined text-sm text-blue-400">encrypted</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">Encrypted</span>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Action -->
+<div class="fixed bottom-0 left-0 right-0 p-4 bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800">
+<div class="flex items-center justify-between mb-4 px-2">
+<span class="text-slate-500 dark:text-slate-400 text-sm font-medium">Total Amount</span>
+<span class="text-slate-900 dark:text-slate-100 text-xl font-bold">$199.00</span>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/25 transition-all active:scale-[0.98] flex items-center justify-center gap-2">
+<span>Complete Purchase</span>
+<span class="material-symbols-outlined">lock</span>
+</button>
+<p class="text-center text-[10px] text-slate-400 mt-3 px-4">By clicking 'Complete Purchase', you agree to EduKo's Terms of Service and Privacy Policy.</p>
+</div>
+</div>
+</body></html>

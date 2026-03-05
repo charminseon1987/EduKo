@@ -1,0 +1,259 @@
+.plan-page {
+    border-color: rgba(35, 71, 111, 0.1);
+}
+
+.plan-header {
+    display: flex;
+    align-items: center;
+    padding: 16px 16px 8px;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+}
+
+@media (prefers-color-scheme: dark) {
+    .plan-header {
+        background-color: var(--glass-bg-dark);
+    }
+}
+
+.hero-section {
+    padding: 24px 24px 8px;
+}
+
+.hero-title {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.hero-title .highlight {
+    color: var(--primary);
+}
+
+.hero-subtitle {
+    font-size: 14px;
+    color: var(--text-slate-500);
+    margin-top: 8px;
+}
+
+.plans-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+}
+
+.plan-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(35, 71, 111, 0.1);
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+@media (prefers-color-scheme: dark) {
+    .plan-card {
+        background-color: rgba(35, 71, 111, 0.05);
+    }
+}
+
+.plan-card.featured {
+    border: 2px solid var(--primary);
+    background-color: rgba(35, 71, 111, 0.05);
+    box-shadow: 0 0 25px var(--primary-glow);
+    animation: glowPulse 2s infinite alternate;
+}
+
+@keyframes glowPulse {
+    from {
+        box-shadow: 0 0 15px var(--primary-glow);
+    }
+
+    to {
+        box-shadow: 0 0 30px var(--primary-glow);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .plan-card.featured {
+        background-color: rgba(35, 71, 111, 0.1);
+    }
+}
+
+.plan-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--primary);
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-bottom-left-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.plan-info h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.plan-price-wrap {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.price-value {
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+}
+
+.price-period {
+    font-size: 14px;
+    color: var(--text-slate-500);
+    font-weight: 500;
+}
+
+.plan-cta {
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.plan-cta:active {
+    transform: scale(0.95);
+}
+
+.plan-cta.primary {
+    background-color: var(--primary);
+    color: white;
+    box-shadow: 0 10px 15px -3px rgba(35, 71, 111, 0.3);
+}
+
+.plan-cta.secondary {
+    background-color: rgba(35, 71, 111, 0.1);
+    color: var(--primary);
+}
+
+@media (prefers-color-scheme: dark) {
+    .plan-cta.secondary {
+        background-color: rgba(35, 71, 111, 0.2);
+    }
+}
+
+.plan-features {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-slate-700);
+}
+
+@media (prefers-color-scheme: dark) {
+    .feature-item {
+        color: var(--text-slate-300);
+    }
+}
+
+.plan-card.featured .feature-item {
+    font-weight: 600;
+    color: var(--text-slate-900);
+}
+
+@media (prefers-color-scheme: dark) {
+    .plan-card.featured .feature-item {
+        color: white;
+    }
+}
+
+.check {
+    font-size: 20px;
+    color: var(--primary);
+}
+
+/* FAQ */
+.faq-section {
+    padding: 16px 24px 32px;
+    margin-bottom: 32px;
+}
+
+.faq-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.faq-list {
+    border-top: 1px solid rgba(35, 71, 111, 0.1);
+}
+
+.faq-item {
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(35, 71, 111, 0.1);
+}
+
+.faq-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+}
+
+.faq-summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-question {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-slate-700);
+}
+
+@media (prefers-color-scheme: dark) {
+    .faq-question {
+        color: var(--text-slate-300);
+    }
+}
+
+.expand-icon {
+    color: var(--primary);
+    transition: transform 0.2s;
+}
+
+.faq-item[open] .expand-icon {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-slate-500);
+    margin-top: 12px;
+}
