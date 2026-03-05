@@ -8,7 +8,7 @@ export const useAuth = () => useContext(AuthContext);
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
-    const [isPremium, setIsPremium] = useState(false);
+    const [isPremium, setIsPremium] = useState(true); // FORCED TRUE FOR REVIEW
     const [authError, setAuthError] = useState(null);
 
     const loginWithGoogle = async () => {
@@ -55,7 +55,7 @@ export const AuthProvider = ({ children }) => {
             if (session?.user) {
                 checkPremiumStatus(session.user.id);
             } else {
-                setIsPremium(false);
+                setIsPremium(true); // KEEP TRUE FOR REVIEW
             }
             setLoading(false);
         });
